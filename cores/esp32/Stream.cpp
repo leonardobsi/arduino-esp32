@@ -33,6 +33,7 @@ int Stream::timedRead()
     int c;
     _startMillis = millis();
     do {
+        delay(1);
         c = read();
         if(c >= 0) {
             return c;
